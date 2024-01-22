@@ -4,8 +4,13 @@ using SphinxRiddle.Models;
 namespace SphinxRiddle.Tests
 {
   [TestClass]
-  public class RiddleVariablesTests
+  public class RiddleTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void RiddleConstructor_CreatesInstanceOfRiddle_Riddle()
+    {
+      Riddle newRiddle = new Riddle();
+      Assert.AreEqual(typeof(Riddle), newRiddle.GetType());
+    }
   }
 }
