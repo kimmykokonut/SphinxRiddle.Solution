@@ -30,6 +30,13 @@ namespace SphinxRiddle.Tests
       newRiddle.Input = newAnswer;
       Assert.AreEqual(newAnswer, newRiddle.Input);
     }
-
+    [TestMethod]
+    public void CheckAnswer_DeterminesIfUserAnswerMatchesActualAnswer_Bool()
+    {
+        Riddle newRiddle = new Riddle("test answer");
+        bool riddleTest = newRiddle.CheckAnswer("test answer", "actual answer");
+        Assert.IsInstanceOfType(riddleTest, typeof(bool));
+        Assert.IsFalse(riddleTest);
+    }
   }
 }
