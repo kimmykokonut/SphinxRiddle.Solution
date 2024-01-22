@@ -9,8 +9,18 @@ namespace SphinxRiddle.Tests
     [TestMethod]
     public void RiddleConstructor_CreatesInstanceOfRiddle_Riddle()
     {
-      Riddle newRiddle = new Riddle();
+      Riddle newRiddle = new Riddle("hello");
       Assert.AreEqual(typeof(Riddle), newRiddle.GetType());
     }
+
+    [TestMethod]
+    public void GetInput_ReturnsInput_String()
+    {
+      string userInput = "Test";
+      Riddle newRiddle = new Riddle(userInput);
+      string result = newRiddle.Input;
+      Assert.AreEqual(userInput, result);
+    }
+
   }
 }
