@@ -22,5 +22,14 @@ namespace SphinxRiddle.Tests
       Assert.AreEqual(userInput, result);
     }
 
+    [TestMethod]
+    public void SetInput_SetsValue_Void()
+    {
+      Riddle newRiddle = new Riddle("Test");
+      string newAnswer = "Updated Test";
+      newRiddle.Input = newAnswer;
+      Assert.AreEqual(newAnswer, newRiddle.Input);
+    }
+
   }
 }
