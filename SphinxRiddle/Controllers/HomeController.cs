@@ -10,6 +10,7 @@ namespace SphinxRiddle.Controllers
 
     [Route("/riddlequestion")]
     public ActionResult RiddleQuestion() { return View(); }
+    // string answer1 = "memory";
 
     // [Route("/riddleanswer")]
     // public ActionResult RiddleAnswer()
