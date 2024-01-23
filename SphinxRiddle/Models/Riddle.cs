@@ -9,10 +9,12 @@ namespace SphinxRiddle.Models
     public Riddle(string userInput)
   {
     Input = userInput;
+    // Answer= answer; //A1 = "memory"
   }
-    public bool CheckAnswer(string input, string answer)
+    public bool CheckAnswer(string userInput)
     {
-        if (input == answer)
+        string answer = "memory";
+        if (userInput == answer)
         {
             return true;
         }

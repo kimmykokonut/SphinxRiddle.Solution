@@ -10,6 +10,21 @@
     <meta charset='utf-8'>
   </head>
   <body>
-
+  <p>What can bring back the dead; make you cry, make you laugh, make you young; is born in an instant, yet lasts a lifetime.</p>
+  <form action="/riddlequestion" method="post">
+    <label for="userInput">Answer:</label>
+    <input id="userInput" name="userInput" type="text"> 
+    <button type="submit">Check your fate!</button>
+    <div id="response">
+    @* if (@Model.Input == "memory")
+    {
+        <p>Well done! Get ready for question 2</p>
+    }
+    else
+    {
+        <p>Sorry, I'm going to eat you now...</p>
+    } *@
+    
+    </div>
   </body>
   </html>

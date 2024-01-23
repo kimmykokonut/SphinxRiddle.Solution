@@ -12,7 +12,7 @@ namespace SphinxRiddle.Controllers
     public ActionResult RiddleQuestion() { return View(); }
 
     // [Route("/riddleanswer")]
-    // public ActionResult RiddleAnswer(string result)
+    // public ActionResult RiddleAnswer()
     // {
     //   Riddle userRiddle = new Riddle();
     //   Riddle.Input = userInput;
