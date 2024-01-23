@@ -10,6 +10,19 @@ namespace SphinxRiddle.Models
   {
     Input = userInput;
   }
+    public bool CheckAnswer(string input, string answer)
+    {
+        if (input == answer)
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+
+        }
+    }
+
   }
   
 }
